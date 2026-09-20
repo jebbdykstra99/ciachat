@@ -1,0 +1,711 @@
+{
+  "siteId": "cia",
+  "redditSr": "ciachat",
+  "name": "ciachat",
+  "domain": "ciachat.com",
+  "tagline": "Agency talk. Sources optional.",
+  "composePlaceholder": "Cite a public source \u2014 or label speculation.",
+  "earlyWelcome": true,
+  "dms": true,
+  "preview": true,
+  "robots": "noindex,nofollow",
+  "emptyState": "Preview room \u2014 noindex until GTM lifts. Sign in to post. Guest can browse only. Public sources and FOIA only. Conspiracy nest is labeled SPECULATION. Do not invent classified claims.",
+  "theme": {
+    "bg": "#101418",
+    "surface": "#181e24",
+    "nav-bg": "#080c10",
+    "nav-text": "#8a9aa8",
+    "nav-hover": "#e0e8f0",
+    "nav-active": "#e0e8f0",
+    "text": "#e0e8f0",
+    "text-muted": "#8a9aa8",
+    "text-light": "#5a6a78",
+    "accent": "#3d7a4a",
+    "accent-dark": "#2a5a34",
+    "teal": "#4a7a8a",
+    "silver": "#a0b0c0",
+    "border": "#283038",
+    "avatarColors": [
+      "#3d7a4a",
+      "#2a5a34",
+      "#4a7a8a",
+      "#1a3a20",
+      "#6a8a70",
+      "#c0d0c8"
+    ]
+  },
+  "trends": [
+    {
+      "tag": "FOIA",
+      "headline": "Start at archives.gov",
+      "snippet": "Public process outbound \u2014 not classified.",
+      "meta": "Nest: foia"
+    },
+    {
+      "tag": "History",
+      "headline": "Cold War timelines (public)",
+      "snippet": "Reading room energy.",
+      "meta": "Nest: history"
+    },
+    {
+      "tag": "Conspiracy",
+      "headline": "SPECULATION nest \u2014 labeled",
+      "snippet": "Not facts. Cross-check FOIA.",
+      "meta": "Nest: conspiracy"
+    },
+    {
+      "tag": "CIA",
+      "headline": "Reading room browse",
+      "snippet": "Released docs only.",
+      "meta": "Nest: cia"
+    },
+    {
+      "tag": "Tech",
+      "headline": "Public OSINT explainers",
+      "snippet": "High-level only \u2014 no exploits.",
+      "meta": "Nest: tech"
+    },
+    {
+      "tag": "NSA",
+      "headline": "Cryptologic museum (public)",
+      "snippet": "Visitor notes welcome.",
+      "meta": "Nest: nsa"
+    }
+  ],
+  "places": [
+    {
+      "tag": "Topic",
+      "title": "FOIA",
+      "snippet": "archives.gov and reading rooms."
+    },
+    {
+      "tag": "Topic",
+      "title": "History",
+      "snippet": "Public Cold War timelines."
+    },
+    {
+      "tag": "Topic",
+      "title": "Conspiracy",
+      "snippet": "SPECULATION \u2014 labeled."
+    },
+    {
+      "tag": "Topic",
+      "title": "Tech",
+      "snippet": "Public OSINT \u2014 no exploits."
+    }
+  ],
+  "topics": [
+    {
+      "tag": "Sources",
+      "title": "Public docs only",
+      "snippet": "FOIA / archives / official sites."
+    },
+    {
+      "tag": "Speculation",
+      "title": "Label it",
+      "snippet": "Conspiracy nest must say SPECULATION."
+    },
+    {
+      "tag": "Legal",
+      "title": "Preview tone",
+      "snippet": "No invented classified claims."
+    },
+    {
+      "tag": "History",
+      "title": "Secondary sources OK",
+      "snippet": "Cite them."
+    }
+  ],
+  "stories": {
+    "enabled": true,
+    "maxSeconds": 15,
+    "maxBytes": 8000000
+  },
+  "seedNote": "sample \u2014 not mixed into the live feed",
+  "seed": [
+    {
+      "id": "p1",
+      "name": "FOIA Scout",
+      "handle": "foiascout",
+      "text": "Starting at archives.gov FOIA. Public process only. Nest: foia.",
+      "hours": 2,
+      "likes": 74,
+      "replies": 9,
+      "followed": true,
+      "nestSlug": "foia"
+    },
+    {
+      "id": "p2",
+      "name": "Reading Room",
+      "handle": "readingroom",
+      "text": "CIA reading room skim \u2014 released docs. Nest: cia. Not classified.",
+      "hours": 4,
+      "likes": 61,
+      "replies": 7,
+      "followed": true,
+      "nestSlug": "cia"
+    },
+    {
+      "id": "p3",
+      "name": "Spec Label",
+      "handle": "speclabel",
+      "text": "SPECULATION: labeling this clearly. Conspiracy nest. Cross-check FOIA.",
+      "hours": 6,
+      "likes": 45,
+      "replies": 14,
+      "followed": false,
+      "nestSlug": "conspiracy"
+    },
+    {
+      "id": "p4",
+      "name": "Cold War Kid",
+      "handle": "coldwarkid",
+      "text": "Public Cold War timeline. History nest stub.",
+      "hours": 9,
+      "likes": 88,
+      "replies": 11,
+      "followed": true,
+      "nestSlug": "history"
+    },
+    {
+      "id": "p5",
+      "name": "Museum Pass",
+      "handle": "museumpass",
+      "text": "NSA cryptologic museum (public). Nest: nsa.",
+      "hours": 12,
+      "likes": 52,
+      "replies": 6,
+      "followed": true,
+      "nestSlug": "nsa"
+    },
+    {
+      "id": "p6",
+      "name": "OSINT Lite",
+      "handle": "osintlite",
+      "text": "High-level public OSINT explainer only. Tech nest \u2014 no exploit talk.",
+      "hours": 16,
+      "likes": 39,
+      "replies": 5,
+      "followed": false,
+      "nestSlug": "tech"
+    }
+  ],
+  "notifs": [
+    {
+      "id": "n1",
+      "text": "@foiascout liked your FOIA take.",
+      "time": "1h",
+      "unread": true
+    },
+    {
+      "id": "n2",
+      "text": "@speclabel mentioned you in conspiracy.",
+      "time": "3h",
+      "unread": true
+    },
+    {
+      "id": "n3",
+      "text": "@readingroom started following you. Dummy follow.",
+      "time": "Yesterday",
+      "unread": true
+    }
+  ],
+  "threads": [
+    {
+      "id": "t1",
+      "name": "FOIA Scout",
+      "handle": "foiascout",
+      "preview": "Archives.gov or reading room first?",
+      "messages": [
+        {
+          "me": false,
+          "text": "Archives.gov or reading room first?"
+        },
+        {
+          "me": true,
+          "text": "Archives FOIA page, then CIA reading room."
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "name": "Spec Label",
+      "handle": "speclabel",
+      "preview": "Did you label speculation?",
+      "messages": [
+        {
+          "me": false,
+          "text": "Did you label speculation?"
+        },
+        {
+          "me": true,
+          "text": "Yes \u2014 SPECULATION nest rule."
+        }
+      ]
+    }
+  ],
+  "rail": {
+    "kind": "room-brief",
+    "title": "Room Brief",
+    "kicker": "On cia",
+    "meta": "Preview \u00b7 noindex",
+    "footer": "Public docs & FOIA only. Conspiracy = SPECULATION. No invented classified claims.",
+    "porch": {
+      "prompt": "Public source or speculation?",
+      "dwellMs": 9000,
+      "options": [
+        "FOIA",
+        "History",
+        "Speculation (labeled)"
+      ]
+    },
+    "outbound": [
+      {
+        "tag": "FOIA",
+        "headline": "National Archives FOIA",
+        "snippet": "Public process at archives.gov",
+        "meta": "Public",
+        "url": "https://www.archives.gov/foia"
+      },
+      {
+        "tag": "FOIA",
+        "headline": "CIA FOIA Reading Room",
+        "snippet": "Released documents",
+        "meta": "Public",
+        "url": "https://www.cia.gov/readingroom/"
+      },
+      {
+        "tag": "FOIA",
+        "headline": "FBI Vault",
+        "snippet": "Public released files",
+        "meta": "Public",
+        "url": "https://vault.fbi.gov/"
+      }
+    ]
+  },
+  "nests": [
+    {
+      "slug": "cia",
+      "label": "CIA",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "Agency talk from public sources only.",
+      "rankings": [
+        {
+          "id": "cia-top",
+          "title": "CIA \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Public org chart lore",
+              "note": "Open sources",
+              "url": "https://www.cia.gov/"
+            },
+            {
+              "rank": 2,
+              "name": "Museum & public exhibits",
+              "note": "Visitor energy",
+              "url": "https://www.cia.gov/legacy/museum/"
+            },
+            {
+              "rank": 3,
+              "name": "Declassified reading lists",
+              "note": "FOIA-adjacent",
+              "url": "https://www.cia.gov/readingroom/"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-cia-1",
+          "subject": "Reading room browse",
+          "stars": 4,
+          "snippet": "Public docs only \u2014 stub.",
+          "region": "US"
+        },
+        {
+          "id": "r-cia-2",
+          "subject": "Museum visit note",
+          "stars": 5,
+          "snippet": "Dummy visitor take.",
+          "region": "US"
+        }
+      ],
+      "railPins": []
+    },
+    {
+      "slug": "nsa",
+      "label": "NSA",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "Signals talk \u2014 public releases only.",
+      "rankings": [
+        {
+          "id": "nsa-top",
+          "title": "NSA \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Public cryptology museum",
+              "note": "Open visit",
+              "url": "https://www.nsa.gov/about/cryptologic-heritage/museum/"
+            },
+            {
+              "rank": 2,
+              "name": "Released historical papers",
+              "note": "Public archive",
+              "url": "https://www.nsa.gov/"
+            },
+            {
+              "rank": 3,
+              "name": "Careers page (public)",
+              "note": "Not insider info",
+              "url": "https://www.intelligencecareers.gov/nsa"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-nsa-1",
+          "subject": "Museum stub",
+          "stars": 4,
+          "snippet": "Public only.",
+          "region": "US"
+        },
+        {
+          "id": "r-nsa-2",
+          "subject": "Historical paper skim",
+          "stars": 3,
+          "snippet": "Dummy.",
+          "region": "US"
+        }
+      ],
+      "railPins": []
+    },
+    {
+      "slug": "mi6",
+      "label": "MI6",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "UK foreign intel \u2014 public media & history.",
+      "rankings": [
+        {
+          "id": "mi6-top",
+          "title": "MI6 \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Official SIS public site",
+              "note": "What they publish",
+              "url": "https://www.sis.gov.uk/"
+            },
+            {
+              "rank": 2,
+              "name": "Public history timelines",
+              "note": "Open sources",
+              "url": null
+            },
+            {
+              "rank": 3,
+              "name": "Fiction vs fact pins",
+              "note": "Label clearly",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-mi6-1",
+          "subject": "Public site skim",
+          "stars": 3,
+          "snippet": "Stub.",
+          "region": "US"
+        },
+        {
+          "id": "r-mi6-2",
+          "subject": "History documentary take",
+          "stars": 4,
+          "snippet": "Dummy.",
+          "region": "US"
+        }
+      ],
+      "railPins": []
+    },
+    {
+      "slug": "mossad",
+      "label": "Mossad",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "IL intel in public reporting \u2014 no inventing ops.",
+      "rankings": [
+        {
+          "id": "mossad-top",
+          "title": "Mossad \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Public MFA / open reporting",
+              "note": "Cite sources",
+              "url": null
+            },
+            {
+              "rank": 2,
+              "name": "Historical books (public)",
+              "note": "Secondary sources",
+              "url": null
+            },
+            {
+              "rank": 3,
+              "name": "Media explainers",
+              "note": "Not classified claims",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-mossad-1",
+          "subject": "Public history book",
+          "stars": 4,
+          "snippet": "Secondary source stub.",
+          "region": "US"
+        },
+        {
+          "id": "r-mossad-2",
+          "subject": "News explainer",
+          "stars": 3,
+          "snippet": "Dummy.",
+          "region": "US"
+        }
+      ],
+      "railPins": []
+    },
+    {
+      "slug": "foia",
+      "label": "Foia",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "How to request & read public releases.",
+      "rankings": [
+        {
+          "id": "foia-top",
+          "title": "Foia \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "National Archives FOIA",
+              "note": "Start here",
+              "url": "https://www.archives.gov/foia"
+            },
+            {
+              "rank": 2,
+              "name": "CIA FOIA reading room",
+              "note": "Released docs",
+              "url": "https://www.cia.gov/readingroom/"
+            },
+            {
+              "rank": 3,
+              "name": "FBI Vault (public)",
+              "note": "Released files",
+              "url": "https://vault.fbi.gov/"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-foia-1",
+          "subject": "Archives.gov FOIA page",
+          "stars": 5,
+          "snippet": "Public process stub.",
+          "region": "US"
+        },
+        {
+          "id": "r-foia-2",
+          "subject": "Reading room browse",
+          "stars": 4,
+          "snippet": "Illustrative.",
+          "region": "US"
+        }
+      ],
+      "railPins": [],
+      "outbound": [
+        {
+          "tag": "FOIA",
+          "headline": "National Archives FOIA",
+          "snippet": "Public process \u2014 archives.gov",
+          "url": "https://www.archives.gov/foia"
+        },
+        {
+          "tag": "FOIA",
+          "headline": "CIA FOIA Reading Room",
+          "snippet": "Released documents only",
+          "url": "https://www.cia.gov/readingroom/"
+        },
+        {
+          "tag": "FOIA",
+          "headline": "FBI Vault",
+          "snippet": "Public released files",
+          "url": "https://vault.fbi.gov/"
+        }
+      ]
+    },
+    {
+      "slug": "conspiracy",
+      "label": "Conspiracy",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "SPECULATION nest \u2014 clearly labeled. Not facts.",
+      "rankings": [
+        {
+          "id": "conspiracy-top",
+          "title": "Conspiracy \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Labeled speculation threads only",
+              "note": "Must mark speculation",
+              "url": null
+            },
+            {
+              "rank": 2,
+              "name": "Compare to FOIA primary docs",
+              "note": "Reality check",
+              "url": "https://www.archives.gov/"
+            },
+            {
+              "rank": 3,
+              "name": "No invented classified claims",
+              "note": "Hard rule",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-consp-1",
+          "subject": "Speculation vs FOIA",
+          "stars": 3,
+          "snippet": "SPECULATION \u2014 not established fact.",
+          "region": "US"
+        },
+        {
+          "id": "r-consp-2",
+          "subject": "Labeled theory stub",
+          "stars": 2,
+          "snippet": "SPECULATION nest only.",
+          "region": "US"
+        }
+      ],
+      "railPins": [],
+      "speculation": true,
+      "disclaimer": "SPECULATION \u2014 not established fact. Cross-check FOIA / public archives."
+    },
+    {
+      "slug": "history",
+      "label": "History",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "Cold War to present \u2014 public timelines.",
+      "rankings": [
+        {
+          "id": "history-top",
+          "title": "History \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Cold War public timelines",
+              "note": "Open history",
+              "url": "https://www.archives.gov/"
+            },
+            {
+              "rank": 2,
+              "name": "Declassified cable collections",
+              "note": "Reading room",
+              "url": "https://www.cia.gov/readingroom/"
+            },
+            {
+              "rank": 3,
+              "name": "Museum exhibits",
+              "note": "Visitor notes",
+              "url": null
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-hist-1",
+          "subject": "Cold War timeline",
+          "stars": 5,
+          "snippet": "Public history stub.",
+          "region": "US"
+        },
+        {
+          "id": "r-hist-2",
+          "subject": "Declassified cable skim",
+          "stars": 4,
+          "snippet": "Dummy.",
+          "region": "US"
+        }
+      ],
+      "railPins": []
+    },
+    {
+      "slug": "tech",
+      "label": "Tech",
+      "parent": null,
+      "kind": "topic",
+      "blurb": "OSINT tools & public tech \u2014 no exploit talk.",
+      "rankings": [
+        {
+          "id": "tech-top",
+          "title": "Tech \u00b7 public pins (sample)",
+          "items": [
+            {
+              "rank": 1,
+              "name": "Public OSINT explainers",
+              "note": "High-level only",
+              "url": null
+            },
+            {
+              "rank": 2,
+              "name": "Agency tech museums",
+              "note": "Heritage",
+              "url": "https://www.nsa.gov/about/cryptologic-heritage/museum/"
+            },
+            {
+              "rank": 3,
+              "name": "FOIA on tech programs (public)",
+              "note": "Released only",
+              "url": "https://www.archives.gov/foia"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "r-tech-1",
+          "subject": "Museum crypto exhibit",
+          "stars": 4,
+          "snippet": "Public stub.",
+          "region": "US"
+        },
+        {
+          "id": "r-tech-2",
+          "subject": "OSINT explainer",
+          "stars": 3,
+          "snippet": "High-level only.",
+          "region": "US"
+        }
+      ],
+      "railPins": []
+    }
+  ],
+  "roomNumber": 15
+}
