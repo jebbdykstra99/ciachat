@@ -381,8 +381,10 @@
     if (authTitle) authTitle.textContent = 'Join ' + title;
     var authNote = document.querySelector('#cv-auth-overlay .conv-modal-note');
     if (authNote) {
-      authNote.textContent = 'Continue with Google to join ' + title + '. Email is optional. Guest is browse-only. Not official CIA.';
+      authNote.textContent = 'Public sources and FOIA. Speculation labeled. Not official CIA.';
     }
+    var homeH1 = document.querySelector('#page-thoughts .home-h1');
+    if (homeH1 && tag) homeH1.textContent = tag;
     var profileSub = document.getElementById('profile-topbar-posts');
     if (profileSub && tag) profileSub.textContent = title + ' · ' + tag;
     var regName = document.getElementById('cv-reg-name');
@@ -2803,7 +2805,7 @@
     } else {
       el.innerHTML = '<button class="sidebar-auth-btn primary" id="auth-signin" type="button">Sign in</button>';
       if (av) {
-        av.textContent = "CIA";
+        av.textContent = "CI";
         av.style.background = '';
       }
     }

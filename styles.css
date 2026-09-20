@@ -193,6 +193,14 @@ body {
 }
 .page { display: none; }
 .page.active { display: block; min-height: 100vh; }
+.home-h1 {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding: 1.05rem 1.4rem 0.2rem;
+  color: var(--text);
+}
 
 .page-header { padding: 2.2rem 1.6rem 0.4rem; }
 .page-kicker {

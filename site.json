@@ -86,21 +86,21 @@
       "empty": "No history threads yet. Bring a citation."
     },
     {
-      "tag": "SPECULATION",
-      "title": "Conspiracy (SPECULATION)",
+      "tag": "Conspiracy",
+      "title": "Conspiracy",
       "snippet": "Labeled speculation only. Not facts. Cross-check FOIA.",
       "empty": "Speculation seat is empty. If you post here, lead with SPECULATION."
     },
     {
       "tag": "Tech",
-      "title": "Tech / public OSINT",
+      "title": "Tech",
       "snippet": "High-level public explainers only \u2014 no exploits, no how-to-break.",
       "empty": "No tech threads yet. Keep it public and high-level."
     },
     {
       "tag": "Reading room",
       "title": "Reading room",
-      "snippet": "Released docs browse \u2014 CIA CREST / public reading rooms.",
+      "snippet": "Released docs browse \u2014 public reading rooms / CREST finds with links.",
       "empty": "Drop a released-doc find with a link."
     }
   ],
