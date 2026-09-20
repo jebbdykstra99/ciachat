@@ -1,20 +1,20 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:          #eef6f3;
-  --surface:          #f7fbf9;
-  --nav-bg:          #12151c;
-  --nav-text:     #9bb0c0;
-  --nav-hover:     #d5e2ea;
-  --nav-active:     #f4f8fb;
-  --text:          #12201b;
-  --text-muted:     #4a5d6c;
-  --text-light:     #6d8292;
-  --accent:          #3d9b7a;
-  --accent-dark:     #2f7d62;
-  --teal:          #2d6b5a;
-  --silver:          #b8c5cf;
-  --border:          #c9d5de;
+  --bg:          #101418;
+  --surface:          #181e24;
+  --nav-bg:          #080c10;
+  --nav-text:     #8a9aa8;
+  --nav-hover:     #e0e8f0;
+  --nav-active:     #e0e8f0;
+  --text:          #e0e8f0;
+  --text-muted:     #8a9aa8;
+  --text-light:     #5a6a78;
+  --accent:          #3d7a4a;
+  --accent-dark:     #2a5a34;
+  --teal:          #4a7a8a;
+  --silver:          #a0b0c0;
+  --border:          #283038;
   --nav-w:          275px;
   --right-w:          330px;
   --ui:          Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -56,7 +56,7 @@ body {
   top: 0;
   z-index: 5;
   background: var(--nav-bg);
-  border-bottom: 1px solid rgba(61, 155, 122, 0.32);
+  border-bottom: 1px solid rgba(61, 122, 74, 0.32);
 }
 .sidebar-search-btn {
   position: absolute;
@@ -70,7 +70,7 @@ body {
 .brand-mark { display: inline-block; }
 .brand-icon {
   display: block; width: 44px; height: 44px; margin: 0 auto 0.55rem;
-  border: 1px solid rgba(61, 155, 122, 0.5); border-radius: 10px;
+  border: 1px solid rgba(61, 122, 74, 0.5); border-radius: 10px;
 }
 .brand-title {
   font-family: var(--display);
@@ -193,6 +193,14 @@ body {
 }
 .page { display: none; }
 .page.active { display: block; min-height: 100vh; }
+.home-h1 {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding: 1.05rem 1.4rem 0.2rem;
+  color: var(--text);
+}
 
 .page-header { padding: 2.2rem 1.6rem 0.4rem; }
 .page-kicker {
@@ -220,7 +228,7 @@ body {
 .right-panel.is-overlaying { overflow: hidden; }
 .right-panel-header {
   padding: 3.8rem 1.4rem 1rem;
-  border-bottom: 1px solid rgba(61, 155, 122, 0.32);
+  border-bottom: 1px solid rgba(61, 122, 74, 0.32);
   flex-shrink: 0;
 }
 .right-panel-kicker {
@@ -305,7 +313,7 @@ a.news-item:hover { background: rgba(255,255,255,0.07); }
   font-weight: 650;
   color: #f4f8fb;
   background: var(--accent);
-  border: 1px solid rgba(61, 155, 122, 0.45);
+  border: 1px solid rgba(61, 122, 74, 0.45);
   border-radius: 999px;
   padding: 0.48rem 0.9rem;
 }
@@ -956,6 +964,7 @@ body.legal-page {
   font-size: 2rem; margin-bottom: 0.8rem;
 }
 .legal-doc p, .legal-doc li { color: var(--text-muted); margin-bottom: 0.7rem; }
+.legal-doc strong { color: var(--text); }
 .legal-doc ul { padding-left: 1.2rem; margin-bottom: 1rem; }
 .legal-doc a { color: var(--teal); }
 

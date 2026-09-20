@@ -3,13 +3,13 @@
   "redditSr": "ciachat",
   "name": "ciachat",
   "domain": "ciachat.com",
-  "tagline": "Agency talk. Sources optional.",
+  "tagline": "FOIA, not fanfic.",
   "composePlaceholder": "Cite a public source \u2014 or label speculation.",
   "earlyWelcome": true,
   "dms": true,
   "preview": true,
   "robots": "noindex,nofollow",
-  "emptyState": "Preview room \u2014 noindex until GTM lifts. Sign in to post. Guest can browse only. Public sources and FOIA only. Conspiracy nest is labeled SPECULATION. Do not invent classified claims.",
+  "emptyState": "Preview room \u2014 noindex. Sign in to post. Guest can browse only. Public sources and FOIA. Speculation labeled. Not official CIA. Do not invent classified claims.",
   "theme": {
     "bg": "#101418",
     "surface": "#181e24",
@@ -74,24 +74,34 @@
   ],
   "places": [
     {
-      "tag": "Topic",
+      "tag": "FOIA",
       "title": "FOIA",
-      "snippet": "archives.gov and reading rooms."
+      "snippet": "archives.gov, reading rooms, how the public process works.",
+      "empty": "No FOIA threads yet. Start with a public filing or process note."
     },
     {
-      "tag": "Topic",
+      "tag": "History",
       "title": "History",
-      "snippet": "Public Cold War timelines."
+      "snippet": "Public Cold War timelines and secondary sources \u2014 cite them.",
+      "empty": "No history threads yet. Bring a citation."
     },
     {
-      "tag": "Topic",
+      "tag": "Conspiracy",
       "title": "Conspiracy",
-      "snippet": "SPECULATION \u2014 labeled."
+      "snippet": "Labeled speculation only. Not facts. Cross-check FOIA.",
+      "empty": "Speculation seat is empty. If you post here, lead with SPECULATION."
     },
     {
-      "tag": "Topic",
+      "tag": "Tech",
       "title": "Tech",
-      "snippet": "Public OSINT \u2014 no exploits."
+      "snippet": "High-level public explainers only \u2014 no exploits, no how-to-break.",
+      "empty": "No tech threads yet. Keep it public and high-level."
+    },
+    {
+      "tag": "Reading room",
+      "title": "Reading room",
+      "snippet": "Released docs browse \u2014 public reading rooms / CREST finds with links.",
+      "empty": "Drop a released-doc find with a link."
     }
   ],
   "topics": [
@@ -289,7 +299,7 @@
       "label": "CIA",
       "parent": null,
       "kind": "topic",
-      "blurb": "Agency talk from public sources only.",
+      "blurb": "Public sources only \u2014 not official CIA.",
       "rankings": [
         {
           "id": "cia-top",
