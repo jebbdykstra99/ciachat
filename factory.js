@@ -2,11 +2,11 @@
   'use strict';
 
   const MOBILE_NAV_MQ = 900;
-  const LS_USER = '415chat.user';
-  const LS_LIKES = '415chat.likes';
+  const LS_USER = 'ciachat.user';
+  const LS_LIKES = 'ciachat.likes';
   const SITE_JSON_URL = (document.currentScript && document.currentScript.getAttribute('data-site')) || 'site.json';
 
-  let SITE_ID = '415chat';
+  let SITE_ID = 'cia';
   let site = null;
   let COLORS = ['#0b1c2c', '#1b6b73', '#c0362c', '#2a4a62', '#8a3b32', '#345c6e'];
   let TRENDS = [];
@@ -368,19 +368,25 @@
 
   function applySiteChrome() {
     if (!site) return;
-    var title = site.name || "415chat";
+    var title = site.name || "ciachat";
     var tag = site.tagline || '';
     document.title = tag ? (title + ' — ' + tag) : title;
     var brandTitle = document.querySelector('.brand-title');
     var brandSub = document.querySelector('.brand-sub');
+    var brandMark = document.querySelector('.brand-mark');
     if (brandTitle) brandTitle.textContent = title;
     if (brandSub) brandSub.textContent = tag;
+    if (brandMark) brandMark.setAttribute('aria-label', title + ' home');
     var authTitle = document.getElementById('auth-title');
     if (authTitle) authTitle.textContent = 'Join ' + title;
     var authNote = document.querySelector('#cv-auth-overlay .conv-modal-note');
     if (authNote) {
-      authNote.textContent = 'Continue with Google to join ' + title + '. Email is optional. Guest is browse-only.';
+      authNote.textContent = 'Continue with Google to join ' + title + '. Email is optional. Guest is browse-only. Not official CIA.';
     }
+    var profileSub = document.getElementById('profile-topbar-posts');
+    if (profileSub && tag) profileSub.textContent = title + ' · ' + tag;
+    var regName = document.getElementById('cv-reg-name');
+    if (regName) regName.setAttribute('placeholder', 'A ' + title + ' handle');
     var input = document.getElementById('thoughts-compose-input');
     if (input && site.composePlaceholder) {
       input.placeholder = site.composePlaceholder;
@@ -468,8 +474,12 @@
     syncStoriesTray();
   }
 
+  function earlyWelcomeCopy() {
+    return (site && typeof site.welcome === 'string' && site.welcome.trim()) || '';
+  }
   function earlyWelcomeOn() {
-    return !!(site && site.earlyWelcome === true);
+    // Flag may be on while the welcome bank stays on ice — do not ship factory fallback copy.
+    return !!(site && site.earlyWelcome === true && earlyWelcomeCopy());
   }
 
   function earlyWelcomeKey(uid) {
@@ -524,7 +534,7 @@
       el.className = 'early-welcome';
       el.setAttribute('role', 'status');
       el.innerHTML =
-        '<div class="early-welcome-copy">You\'re early. This room is live but unfinished. Who do you sit with on the grid — driver, team, or both? Tell the room.</div>' +
+        '<div class="early-welcome-copy">' + escapeHtml(earlyWelcomeCopy()) + '</div>' +
         '<button type="button" class="early-welcome-dismiss" id="early-welcome-dismiss" aria-label="Dismiss">&times;</button>';
       var compose = document.getElementById('thoughts-compose-wrap');
       if (compose && compose.parentNode) compose.parentNode.insertBefore(el, compose.nextSibling);
@@ -2213,7 +2223,7 @@
   }
 
   function dmSiteId() {
-    return SITE_ID || 'gpchat';
+    return SITE_ID || 'cia';
   }
   function convIdFor(uidA, uidB) {
     return dmSiteId() + '__' + [String(uidA || ''), String(uidB || '')].sort().join('_');
@@ -2643,7 +2653,7 @@
       rows.sort(function (a, b) { return a.name.localeCompare(b.name); });
       if (!list) return;
       if (!rows.length) {
-        list.innerHTML = '<div class="soon-panel">No gpchat users yet.</div>';
+        list.innerHTML = '<div class="soon-panel">No ciachat users yet.</div>';
         return;
       }
       list.innerHTML = rows.map(function (u) {
@@ -2718,7 +2728,7 @@
     if (!pane) return;
     const mine = livePosts.filter(function (p) { return p.authorUid && p.authorUid === uid; });
     if (!mine.length) {
-      pane.innerHTML = '<div class="empty-note" id="profile-posts-empty">No posts yet. Hit Post when something about the city is on your mind.</div>';
+      pane.innerHTML = '<div class="empty-note" id="profile-posts-empty">No posts yet. Cite a public source — or label speculation.</div>';
     } else {
       pane.innerHTML = mine.map(function (p) { return renderPost(p, !!p.parentId); }).join('');
     }
@@ -2758,7 +2768,7 @@
     paintProfile(
       currentUser.name,
       currentUser.handle,
-      currentUser.bio || "Talking about the city.",
+      currentUser.bio || "Public sources. Speculation labeled.",
       currentUser.uid
     );
   }
@@ -2793,7 +2803,7 @@
     } else {
       el.innerHTML = '<button class="sidebar-auth-btn primary" id="auth-signin" type="button">Sign in</button>';
       if (av) {
-        av.textContent = "415";
+        av.textContent = "CIA";
         av.style.background = '';
       }
     }
@@ -2980,8 +2990,8 @@
     var draft = peekCompose();
     currentUser = {
       name: name || 'Guest',
-      handle: (handle || 'guest415').replace(/^@/, '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 15) || 'guest415',
-      bio: "San Francisco, talking.",
+      handle: (handle || 'guestcia').replace(/^@/, '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 15) || 'guestcia',
+      bio: "Public sources. Speculation labeled.",
       live: false
     };
     saveJSON(LS_USER, currentUser);
@@ -3741,7 +3751,7 @@
         });
       }
     });
-    document.getElementById('cv-guest-login').addEventListener('click', function () { stubSignIn('Guest', 'guest415'); });
+    document.getElementById('cv-guest-login').addEventListener('click', function () { stubSignIn('Guest', 'guestcia'); });
 
     const search = document.getElementById('explore-search-input');
     search.addEventListener('input', function () {
@@ -3753,7 +3763,7 @@
         });
       }
       function cards(list) {
-        if (!list.length) return '<p class="empty-note">Nothing in the 415 matched that.</p>';
+        if (!list.length) return '<p class="empty-note">Nothing in this reading room matched that.</p>';
         return list.map(function (c) {
           return '<article class="explore-card"><div class="explore-card-tag">' + escapeHtml(c.tag) +
             '</div><div class="explore-card-title">' + escapeHtml(c.title) +
@@ -3789,7 +3799,7 @@
     return !!(storiesCfg().enabled);
   }
   function storiesComposePlaceholder() {
-    return (site && site.composePlaceholder) || "A tool with a receipt — not an oracle.";
+    return (site && site.composePlaceholder) || "Cite a public source — or label speculation.";
   }
   function storiesMaxBytes() {
     var n = parseInt(storiesCfg().maxBytes, 10);
@@ -4575,8 +4585,8 @@
           el.hidden = false;
           el.innerHTML =
             '<button type="button" class="stories-item is-add" data-story-add="1" aria-label="Add story">' +
-              '<span class="stories-ring"><span class="stories-avatar" style="background:' + colorFor(SITE_ID || 'gaichat') + '">' +
-              escapeHtml(String(SITE_ID || 'gaichat').replace(/chat$/i, '').slice(0, 3).toUpperCase() || 'ME') + '</span>' +
+              '<span class="stories-ring"><span class="stories-avatar" style="background:' + colorFor(SITE_ID || 'cia') + '">' +
+              escapeHtml(String(SITE_ID || 'cia').replace(/chat$/i, '').slice(0, 3).toUpperCase() || 'ME') + '</span>' +
               '<span class="stories-add-badge">+</span></span>' +
               '<span class="stories-label">Add story</span></button>';
         },
@@ -4588,8 +4598,8 @@
               id: s.id || ('demo-' + i),
               siteId: SITE_ID,
               authorUid: s.authorUid || ('demo-' + i),
-              name: s.name || (site && site.name) || 'gaichat',
-              handle: s.handle || SITE_ID || 'gaichat',
+              name: s.name || (site && site.name) || 'ciachat',
+              handle: s.handle || SITE_ID || 'cia',
               type: s.type || 'text',
               text: s.text || '',
               mediaUrl: s.mediaUrl || '',
@@ -4691,6 +4701,6 @@
     .catch(function (e) {
       console.warn('site.json', e);
       composeErr((e && e.message) ? e.message : 'Could not load site.json');
-      boot({ siteId: "415chat", name: "415chat", tagline: "San Francisco, talking." });
+      boot({ siteId: "cia", name: "ciachat", tagline: "FOIA, not fanfic." });
     });
 })();
