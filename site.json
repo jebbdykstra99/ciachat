@@ -5,7 +5,7 @@
   "domain": "ciachat.com",
   "tagline": "FOIA, not fanfic.",
   "composePlaceholder": "Cite a public source \u2014 or label speculation.",
-  "earlyWelcome": true,
+  "earlyWelcome": false,
   "dms": true,
   "preview": true,
   "robots": "noindex,nofollow",
@@ -300,32 +300,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "Public sources only \u2014 not official CIA.",
-      "rankings": [
-        {
-          "id": "cia-top",
-          "title": "CIA \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Public org chart lore",
-              "note": "Open sources",
-              "url": "https://www.cia.gov/"
-            },
-            {
-              "rank": 2,
-              "name": "Museum & public exhibits",
-              "note": "Visitor energy",
-              "url": "https://www.cia.gov/legacy/museum/"
-            },
-            {
-              "rank": 3,
-              "name": "Declassified reading lists",
-              "note": "FOIA-adjacent",
-              "url": "https://www.cia.gov/readingroom/"
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-cia-1",
@@ -350,32 +325,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "Signals talk \u2014 public releases only.",
-      "rankings": [
-        {
-          "id": "nsa-top",
-          "title": "NSA \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Public cryptology museum",
-              "note": "Open visit",
-              "url": "https://www.nsa.gov/about/cryptologic-heritage/museum/"
-            },
-            {
-              "rank": 2,
-              "name": "Released historical papers",
-              "note": "Public archive",
-              "url": "https://www.nsa.gov/"
-            },
-            {
-              "rank": 3,
-              "name": "Careers page (public)",
-              "note": "Not insider info",
-              "url": "https://www.intelligencecareers.gov/nsa"
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-nsa-1",
@@ -400,32 +350,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "UK foreign intel \u2014 public media & history.",
-      "rankings": [
-        {
-          "id": "mi6-top",
-          "title": "MI6 \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Official SIS public site",
-              "note": "What they publish",
-              "url": "https://www.sis.gov.uk/"
-            },
-            {
-              "rank": 2,
-              "name": "Public history timelines",
-              "note": "Open sources",
-              "url": null
-            },
-            {
-              "rank": 3,
-              "name": "Fiction vs fact pins",
-              "note": "Label clearly",
-              "url": null
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-mi6-1",
@@ -450,32 +375,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "IL intel in public reporting \u2014 no inventing ops.",
-      "rankings": [
-        {
-          "id": "mossad-top",
-          "title": "Mossad \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Public MFA / open reporting",
-              "note": "Cite sources",
-              "url": null
-            },
-            {
-              "rank": 2,
-              "name": "Historical books (public)",
-              "note": "Secondary sources",
-              "url": null
-            },
-            {
-              "rank": 3,
-              "name": "Media explainers",
-              "note": "Not classified claims",
-              "url": null
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-mossad-1",
@@ -500,32 +400,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "How to request & read public releases.",
-      "rankings": [
-        {
-          "id": "foia-top",
-          "title": "Foia \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "National Archives FOIA",
-              "note": "Start here",
-              "url": "https://www.archives.gov/foia"
-            },
-            {
-              "rank": 2,
-              "name": "CIA FOIA reading room",
-              "note": "Released docs",
-              "url": "https://www.cia.gov/readingroom/"
-            },
-            {
-              "rank": 3,
-              "name": "FBI Vault (public)",
-              "note": "Released files",
-              "url": "https://vault.fbi.gov/"
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-foia-1",
@@ -570,32 +445,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "SPECULATION nest \u2014 clearly labeled. Not facts.",
-      "rankings": [
-        {
-          "id": "conspiracy-top",
-          "title": "Conspiracy \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Labeled speculation threads only",
-              "note": "Must mark speculation",
-              "url": null
-            },
-            {
-              "rank": 2,
-              "name": "Compare to FOIA primary docs",
-              "note": "Reality check",
-              "url": "https://www.archives.gov/"
-            },
-            {
-              "rank": 3,
-              "name": "No invented classified claims",
-              "note": "Hard rule",
-              "url": null
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-consp-1",
@@ -622,32 +472,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "Cold War to present \u2014 public timelines.",
-      "rankings": [
-        {
-          "id": "history-top",
-          "title": "History \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Cold War public timelines",
-              "note": "Open history",
-              "url": "https://www.archives.gov/"
-            },
-            {
-              "rank": 2,
-              "name": "Declassified cable collections",
-              "note": "Reading room",
-              "url": "https://www.cia.gov/readingroom/"
-            },
-            {
-              "rank": 3,
-              "name": "Museum exhibits",
-              "note": "Visitor notes",
-              "url": null
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-hist-1",
@@ -672,32 +497,7 @@
       "parent": null,
       "kind": "topic",
       "blurb": "OSINT tools & public tech \u2014 no exploit talk.",
-      "rankings": [
-        {
-          "id": "tech-top",
-          "title": "Tech \u00b7 public pins (sample)",
-          "items": [
-            {
-              "rank": 1,
-              "name": "Public OSINT explainers",
-              "note": "High-level only",
-              "url": null
-            },
-            {
-              "rank": 2,
-              "name": "Agency tech museums",
-              "note": "Heritage",
-              "url": "https://www.nsa.gov/about/cryptologic-heritage/museum/"
-            },
-            {
-              "rank": 3,
-              "name": "FOIA on tech programs (public)",
-              "note": "Released only",
-              "url": "https://www.archives.gov/foia"
-            }
-          ]
-        }
-      ],
+      "rankings": [],
       "reviews": [
         {
           "id": "r-tech-1",
