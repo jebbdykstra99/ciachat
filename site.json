@@ -76,32 +76,56 @@
     {
       "tag": "FOIA",
       "title": "FOIA",
-      "snippet": "archives.gov, reading rooms, how the public process works.",
+      "snippet": "Process + public filings. Ask: portal first or Reading Room find — which are you bringing?",
       "empty": "No FOIA threads yet. Start with a public filing or process note."
     },
     {
       "tag": "History",
       "title": "History",
-      "snippet": "Public Cold War timelines and secondary sources — cite them.",
+      "snippet": "Cite the timeline. Ask: secondary source you’d trust for this decade?",
       "empty": "No history threads yet. Bring a citation."
     },
     {
       "tag": "Conspiracy",
       "title": "Conspiracy",
-      "snippet": "Labeled speculation only. Not facts. Cross-check FOIA.",
+      "snippet": "SPECULATION only. Ask: FACT / STORYLINE / SPECULATION — label before you pile on.",
       "empty": "Speculation seat is empty. If you post here, lead with SPECULATION."
     },
     {
       "tag": "Tech",
       "title": "Tech",
-      "snippet": "High-level public explainers only — no exploits, no how-to-break.",
+      "snippet": "High-level public explainers. Ask: define one term with a public source (no exploits).",
       "empty": "No tech threads yet. Keep it public and high-level."
     },
     {
       "tag": "Reading room",
       "title": "Reading room",
-      "snippet": "Released docs browse — public reading rooms / CREST finds with links.",
+      "snippet": "Released-doc finds with links. Ask: title, year, why it matters?",
       "empty": "Drop a released-doc find with a link."
+    },
+    {
+      "tag": "CIA",
+      "title": "CIA",
+      "snippet": "History + released docs about the Agency. Ask: Reading Room cite or “I don’t know”?",
+      "empty": "No CIA threads yet. Cite a Reading Room find or say you don’t know."
+    },
+    {
+      "tag": "NSA",
+      "title": "NSA",
+      "snippet": "Public sources and secondary citations only. Ask: what public desk are you standing on?",
+      "empty": "No NSA threads yet. Stand on a public source."
+    },
+    {
+      "tag": "MI6",
+      "title": "MI6",
+      "snippet": "Public sources and secondary citations only. Ask: what public desk are you standing on?",
+      "empty": "No MI6 threads yet. Name a secondary citation."
+    },
+    {
+      "tag": "Mossad",
+      "title": "Mossad",
+      "snippet": "Public sources and secondary citations only. Ask: what public desk are you standing on?",
+      "empty": "No Mossad threads yet. Public reporting only — no invented ops."
     }
   ],
   "topics": [
@@ -135,87 +159,201 @@
   "seed": [
     {
       "id": "p1",
-      "name": "FOIA Scout",
-      "handle": "foiascout",
-      "text": "Starting at archives.gov FOIA. Public process only. Nest: foia.",
+      "name": "Portal First",
+      "handle": "portalfirst",
+      "text": "Before you argue a “secret,” open the public portal. FOIA nest is process + citations — which agency desk did you actually use, and what came back (or timed out)?",
       "hours": 2,
-      "likes": 74,
-      "replies": 9,
+      "likes": 8,
+      "replies": 3,
       "followed": true,
-      "nestSlug": "foia"
+      "nestSlug": "foia",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official U.S. FOIA portal",
+        "url": "https://www.foia.gov/",
+        "snippet": "Free public FOIA contacts/how-to-file board. Not classified; not a leak dump.",
+        "meta": "FACT · official"
+      }
     },
     {
       "id": "p2",
-      "name": "Reading Room",
-      "handle": "readingroom",
-      "text": "CIA reading room skim — released docs. Nest: cia. Not classified.",
+      "name": "Reading Room Find",
+      "handle": "rrfind",
+      "text": "Drop one released-doc find with a link — title, year, why it matters. We never re-host files; outbound only.",
       "hours": 4,
-      "likes": 61,
-      "replies": 7,
+      "likes": 6,
+      "replies": 2,
       "followed": true,
-      "nestSlug": "cia"
+      "nestSlug": "foia",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official CIA Electronic Reading Room",
+        "url": "https://www.cia.gov/readingroom/",
+        "snippet": "Released/declassified docs only. Outbound deep-link; never re-host media.",
+        "meta": "FACT · official"
+      }
     },
     {
       "id": "p3",
-      "name": "Spec Label",
-      "handle": "speclabel",
-      "text": "SPECULATION: labeling this clearly. Conspiracy nest. Cross-check FOIA.",
+      "name": "Cite the Timeline",
+      "handle": "citetimeline",
+      "text": "Cold War beat with a secondary source you can name. History nest wants the citation before the hot take — what’s one public timeline you’d trust for this decade?",
       "hours": 6,
-      "likes": 45,
-      "replies": 14,
-      "followed": false,
-      "nestSlug": "conspiracy"
+      "likes": 11,
+      "replies": 4,
+      "followed": true,
+      "nestSlug": "history",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official U.S. FOIA portal",
+        "url": "https://www.foia.gov/",
+        "snippet": "Process board stays on the rail when “what can the public request?” matters. Not Agency voice.",
+        "meta": "FACT · official"
+      }
     },
     {
       "id": "p4",
-      "name": "Cold War Kid",
-      "handle": "coldwarkid",
-      "text": "Public Cold War timeline. History nest stub.",
-      "hours": 9,
-      "likes": 88,
-      "replies": 11,
-      "followed": true,
-      "nestSlug": "history"
+      "name": "Museum Note",
+      "handle": "museumnote",
+      "text": "Visitor note from a public museum/exhibit (Cryptologic Museum energy, not a tour brochure). What did the placard actually say — and what did you still want sourced?",
+      "hours": 8,
+      "likes": 9,
+      "replies": 2,
+      "followed": false,
+      "nestSlug": "history",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official CIA Electronic Reading Room",
+        "url": "https://www.cia.gov/readingroom/",
+        "snippet": "Pair a museum note with released-doc browsing. Public only.",
+        "meta": "FACT · official"
+      }
     },
     {
       "id": "p5",
-      "name": "Museum Pass",
-      "handle": "museumpass",
-      "text": "NSA cryptologic museum (public). Nest: nsa.",
-      "hours": 12,
-      "likes": 52,
-      "replies": 6,
-      "followed": true,
-      "nestSlug": "nsa"
+      "name": "SPECULATION Door",
+      "handle": "specdoor",
+      "text": "Lead with SPECULATION or don’t post here. Cross-check FOIA before the nest treats a thread as “known.” What claim are you labeling — and what’s the public counter-check?",
+      "hours": 10,
+      "likes": 7,
+      "replies": 5,
+      "followed": false,
+      "nestSlug": "conspiracy",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official U.S. FOIA portal",
+        "url": "https://www.foia.gov/",
+        "snippet": "Public FOIA portal for counter-checks. Speculation labeled; never presented as fact.",
+        "meta": "FACT · official"
+      }
     },
     {
       "id": "p6",
-      "name": "OSINT Lite",
-      "handle": "osintlite",
-      "text": "High-level public OSINT explainer only. Tech nest — no exploit talk.",
-      "hours": 16,
-      "likes": 39,
-      "replies": 5,
+      "name": "Label Check",
+      "handle": "labelcheck",
+      "text": "If it can’t wear SPECULATION in the first line, it belongs in FOIA or History instead. Ask the room: FACT, STORYLINE, or SPECULATION — pick one before you pile on.",
+      "hours": 12,
+      "likes": 5,
+      "replies": 3,
+      "followed": true,
+      "nestSlug": "conspiracy",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official CIA Electronic Reading Room",
+        "url": "https://www.cia.gov/readingroom/",
+        "snippet": "Released docs only. Not a place to invent classified claims.",
+        "meta": "FACT · official"
+      }
+    },
+    {
+      "id": "p7",
+      "name": "High-Level Only",
+      "handle": "highlevel",
+      "text": "Public OSINT explainer energy — what a reading room / archive search is, not how to break anything. What’s one high-level term you want the room to define with a public source?",
+      "hours": 14,
+      "likes": 10,
+      "replies": 2,
       "followed": false,
-      "nestSlug": "tech"
+      "nestSlug": "tech",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official U.S. FOIA portal",
+        "url": "https://www.foia.gov/",
+        "snippet": "Process/education board. No exploits; no how-to-break.",
+        "meta": "FACT · official"
+      }
+    },
+    {
+      "id": "p8",
+      "name": "Not The Agency",
+      "handle": "notagency",
+      "text": "CIA nest is history + released docs about the Agency — never Agency voice, never cosplay. Cite a Reading Room find or say you don’t know.",
+      "hours": 16,
+      "likes": 8,
+      "replies": 4,
+      "followed": true,
+      "nestSlug": "cia",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official CIA Electronic Reading Room",
+        "url": "https://www.cia.gov/readingroom/",
+        "snippet": "Official Electronic Reading Room (released/declassified only). Not affiliated with CIA.",
+        "meta": "FACT · official"
+      }
+    },
+    {
+      "id": "p9",
+      "name": "Public Desk",
+      "handle": "publicdesk",
+      "text": "NSA nest stays on public sources (museum, FOIA process, secondary citations). No invented ops. What’s one public source you’d accept before a hot take?",
+      "hours": 18,
+      "likes": 6,
+      "replies": 2,
+      "followed": true,
+      "nestSlug": "nsa",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official U.S. FOIA portal",
+        "url": "https://www.foia.gov/",
+        "snippet": "Official FOIA portal. Not official IC voice; not a leak dump.",
+        "meta": "FACT · official"
+      }
+    },
+    {
+      "id": "p10",
+      "name": "Secondary Cite",
+      "handle": "secondarycite",
+      "text": "Foreign-service lore only with a secondary citation you can name — books, FOIA releases, declassified series. What source are you standing on, and what’s still unknown?",
+      "hours": 20,
+      "likes": 4,
+      "replies": 3,
+      "followed": false,
+      "nestSlug": "mi6",
+      "outbound": {
+        "tag": "Board",
+        "headline": "Official CIA Electronic Reading Room",
+        "url": "https://www.cia.gov/readingroom/",
+        "snippet": "Released-doc browsing as a model for “cite or don’t claim.” Not MI6 official; not cosplay.",
+        "meta": "FACT · official"
+      }
     }
   ],
   "notifs": [
     {
       "id": "n1",
-      "text": "@foiascout liked your FOIA take.",
+      "text": "@portalfirst liked your FOIA take.",
       "time": "1h",
       "unread": true
     },
     {
       "id": "n2",
-      "text": "@speclabel mentioned you in conspiracy.",
+      "text": "@labelcheck mentioned you in conspiracy.",
       "time": "3h",
       "unread": true
     },
     {
       "id": "n3",
-      "text": "@readingroom started following you. Dummy follow.",
+      "text": "@rrfind started following you. Dummy follow.",
       "time": "Yesterday",
       "unread": true
     }
@@ -223,33 +361,61 @@
   "threads": [
     {
       "id": "t1",
-      "name": "FOIA Scout",
-      "handle": "foiascout",
-      "preview": "Archives.gov or reading room first?",
+      "name": "Portal First",
+      "handle": "portalfirst",
+      "preview": "Before the hot take — do you open FOIA.gov first, or only argue in the thread?",
       "messages": [
         {
           "me": false,
-          "text": "Archives.gov or reading room first?"
+          "text": "Before the hot take — do you open FOIA.gov first, or only argue in the thread?"
         },
         {
           "me": true,
-          "text": "Archives FOIA page, then CIA reading room."
+          "text": "Portal first. Process beat beats invented secret."
+        },
+        {
+          "me": false,
+          "text": "Which agency desk did you actually use — and what came back (or timed out)?"
         }
       ]
     },
     {
       "id": "t2",
-      "name": "Spec Label",
-      "handle": "speclabel",
-      "preview": "Did you label speculation?",
+      "name": "Reading Room Find",
+      "handle": "rrfind",
+      "preview": "Got a released-doc find worth the porch — title and year, or still browsing?",
       "messages": [
         {
           "me": false,
-          "text": "Did you label speculation?"
+          "text": "Got a released-doc find worth the porch — title and year, or still browsing?"
         },
         {
           "me": true,
-          "text": "Yes — SPECULATION nest rule."
+          "text": "Outbound only. We never re-host. Drop the Reading Room link + why it matters."
+        },
+        {
+          "me": false,
+          "text": "What still needs a citation before this nest treats it as settled?"
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "name": "Label Check",
+      "handle": "labelcheck",
+      "preview": "FACT, STORYLINE, or SPECULATION — which label does your claim wear in line one?",
+      "messages": [
+        {
+          "me": false,
+          "text": "FACT, STORYLINE, or SPECULATION — which label does your claim wear in line one?"
+        },
+        {
+          "me": true,
+          "text": "If it can’t wear SPECULATION here, move it to FOIA or History."
+        },
+        {
+          "me": false,
+          "text": "What’s the public counter-check you’d accept — FOIA.gov, Reading Room, or secondary cite?"
         }
       ]
     }
@@ -257,16 +423,19 @@
   "rail": {
     "kind": "room-brief",
     "title": "Room Brief",
-    "kicker": "On cia",
-    "meta": "Preview · noindex",
-    "footer": "Public docs & FOIA only. Conspiracy = SPECULATION. No invented classified claims.",
+    "kicker": "On ciachat",
+    "meta": "Preview · noindex · no GTM",
+    "footer": "Public sources and FOIA. Speculation labeled. Free boards: FOIA.gov · CIA Reading Room. Not official CIA. Vault iced (unlock-2).",
     "porch": {
       "prompt": "Public source or speculation?",
+      "copy": "Open the Official U.S. FOIA portal (https://www.foia.gov/) for process / agency contacts. For released/declassified docs only, use the Official CIA Electronic Reading Room (https://www.cia.gov/readingroom/) — outbound links; we never re-host files. Then come back: which nest (FOIA / History / Conspiracy / Tech / CIA…), one citation or a clear SPECULATION label, and one question for the room.",
       "dwellMs": 9000,
       "options": [
         "FOIA",
         "History",
-        "Speculation (labeled)"
+        "Conspiracy (SPECULATION)",
+        "Tech",
+        "CIA"
       ]
     },
     "outbound": [
@@ -414,21 +583,15 @@
       "outbound": [
         {
           "tag": "FOIA",
-          "headline": "National Archives FOIA",
-          "snippet": "Public process — archives.gov",
-          "url": "https://www.archives.gov/foia"
+          "headline": "Official U.S. FOIA portal",
+          "snippet": "Free public FOIA contacts/how-to-file board. Not classified; not a leak dump.",
+          "url": "https://www.foia.gov/"
         },
         {
           "tag": "FOIA",
-          "headline": "CIA FOIA Reading Room",
-          "snippet": "Released documents only",
+          "headline": "Official CIA Electronic Reading Room",
+          "snippet": "Released/declassified docs only. Outbound deep-link; never re-host.",
           "url": "https://www.cia.gov/readingroom/"
-        },
-        {
-          "tag": "FOIA",
-          "headline": "FBI Vault",
-          "snippet": "Public released files",
-          "url": "https://vault.fbi.gov/"
         }
       ]
     },
