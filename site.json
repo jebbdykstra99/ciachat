@@ -4,12 +4,12 @@
   "name": "ciachat",
   "domain": "ciachat.com",
   "tagline": "FOIA, not fanfic.",
-  "composePlaceholder": "Cite a public source \u2014 or label speculation.",
+  "composePlaceholder": "Cite a public source — or label speculation.",
   "earlyWelcome": false,
   "dms": true,
   "preview": true,
   "robots": "noindex,nofollow",
-  "emptyState": "Preview room \u2014 noindex. Sign in to post. Guest can browse only. Public sources and FOIA. Speculation labeled. Not official CIA. Do not invent classified claims.",
+  "emptyState": "Preview room — noindex. Sign in to post. Guest can browse only. Public sources and FOIA. Speculation labeled. Not official CIA. Do not invent classified claims.",
   "theme": {
     "bg": "#101418",
     "surface": "#181e24",
@@ -38,7 +38,7 @@
     {
       "tag": "FOIA",
       "headline": "Start at archives.gov",
-      "snippet": "Public process outbound \u2014 not classified.",
+      "snippet": "Public process outbound — not classified.",
       "meta": "Nest: foia"
     },
     {
@@ -49,7 +49,7 @@
     },
     {
       "tag": "Conspiracy",
-      "headline": "SPECULATION nest \u2014 labeled",
+      "headline": "SPECULATION nest — labeled",
       "snippet": "Not facts. Cross-check FOIA.",
       "meta": "Nest: conspiracy"
     },
@@ -62,7 +62,7 @@
     {
       "tag": "Tech",
       "headline": "Public OSINT explainers",
-      "snippet": "High-level only \u2014 no exploits.",
+      "snippet": "High-level only — no exploits.",
       "meta": "Nest: tech"
     },
     {
@@ -82,7 +82,7 @@
     {
       "tag": "History",
       "title": "History",
-      "snippet": "Public Cold War timelines and secondary sources \u2014 cite them.",
+      "snippet": "Public Cold War timelines and secondary sources — cite them.",
       "empty": "No history threads yet. Bring a citation."
     },
     {
@@ -94,13 +94,13 @@
     {
       "tag": "Tech",
       "title": "Tech",
-      "snippet": "High-level public explainers only \u2014 no exploits, no how-to-break.",
+      "snippet": "High-level public explainers only — no exploits, no how-to-break.",
       "empty": "No tech threads yet. Keep it public and high-level."
     },
     {
       "tag": "Reading room",
       "title": "Reading room",
-      "snippet": "Released docs browse \u2014 public reading rooms / CREST finds with links.",
+      "snippet": "Released docs browse — public reading rooms / CREST finds with links.",
       "empty": "Drop a released-doc find with a link."
     }
   ],
@@ -131,7 +131,7 @@
     "maxSeconds": 15,
     "maxBytes": 8000000
   },
-  "seedNote": "sample \u2014 not mixed into the live feed",
+  "seedNote": "sample — not mixed into the live feed",
   "seed": [
     {
       "id": "p1",
@@ -148,7 +148,7 @@
       "id": "p2",
       "name": "Reading Room",
       "handle": "readingroom",
-      "text": "CIA reading room skim \u2014 released docs. Nest: cia. Not classified.",
+      "text": "CIA reading room skim — released docs. Nest: cia. Not classified.",
       "hours": 4,
       "likes": 61,
       "replies": 7,
@@ -192,7 +192,7 @@
       "id": "p6",
       "name": "OSINT Lite",
       "handle": "osintlite",
-      "text": "High-level public OSINT explainer only. Tech nest \u2014 no exploit talk.",
+      "text": "High-level public OSINT explainer only. Tech nest — no exploit talk.",
       "hours": 16,
       "likes": 39,
       "replies": 5,
@@ -249,7 +249,7 @@
         },
         {
           "me": true,
-          "text": "Yes \u2014 SPECULATION nest rule."
+          "text": "Yes — SPECULATION nest rule."
         }
       ]
     }
@@ -258,7 +258,7 @@
     "kind": "room-brief",
     "title": "Room Brief",
     "kicker": "On cia",
-    "meta": "Preview \u00b7 noindex",
+    "meta": "Preview · noindex",
     "footer": "Public docs & FOIA only. Conspiracy = SPECULATION. No invented classified claims.",
     "porch": {
       "prompt": "Public source or speculation?",
@@ -271,25 +271,18 @@
     },
     "outbound": [
       {
-        "tag": "FOIA",
-        "headline": "National Archives FOIA",
-        "snippet": "Public process at archives.gov",
-        "meta": "Public",
-        "url": "https://www.archives.gov/foia"
+        "tag": "Board",
+        "headline": "FOIA.gov board",
+        "url": "https://www.foia.gov/",
+        "snippet": "Official U.S. FOIA portal. Not classified; not a leak dump.",
+        "meta": "Official · board"
       },
       {
-        "tag": "FOIA",
-        "headline": "CIA FOIA Reading Room",
-        "snippet": "Released documents",
-        "meta": "Public",
-        "url": "https://www.cia.gov/readingroom/"
-      },
-      {
-        "tag": "FOIA",
-        "headline": "FBI Vault",
-        "snippet": "Public released files",
-        "meta": "Public",
-        "url": "https://vault.fbi.gov/"
+        "tag": "Board",
+        "headline": "CIA Reading Room",
+        "url": "https://www.cia.gov/readingroom/",
+        "snippet": "Official Electronic Reading Room (released/declassified only). Outbound; never re-host.",
+        "meta": "Official · board"
       }
     ]
   },
@@ -299,14 +292,14 @@
       "label": "CIA",
       "parent": null,
       "kind": "topic",
-      "blurb": "Public sources only \u2014 not official CIA.",
+      "blurb": "Public sources only — not official CIA.",
       "rankings": [],
       "reviews": [
         {
           "id": "r-cia-1",
           "subject": "Reading room browse",
           "stars": 4,
-          "snippet": "Public docs only \u2014 stub.",
+          "snippet": "Public docs only — stub.",
           "region": "US"
         },
         {
@@ -324,7 +317,7 @@
       "label": "NSA",
       "parent": null,
       "kind": "topic",
-      "blurb": "Signals talk \u2014 public releases only.",
+      "blurb": "Signals talk — public releases only.",
       "rankings": [],
       "reviews": [
         {
@@ -349,7 +342,7 @@
       "label": "MI6",
       "parent": null,
       "kind": "topic",
-      "blurb": "UK foreign intel \u2014 public media & history.",
+      "blurb": "UK foreign intel — public media & history.",
       "rankings": [],
       "reviews": [
         {
@@ -374,7 +367,7 @@
       "label": "Mossad",
       "parent": null,
       "kind": "topic",
-      "blurb": "IL intel in public reporting \u2014 no inventing ops.",
+      "blurb": "IL intel in public reporting — no inventing ops.",
       "rankings": [],
       "reviews": [
         {
@@ -422,7 +415,7 @@
         {
           "tag": "FOIA",
           "headline": "National Archives FOIA",
-          "snippet": "Public process \u2014 archives.gov",
+          "snippet": "Public process — archives.gov",
           "url": "https://www.archives.gov/foia"
         },
         {
@@ -444,14 +437,14 @@
       "label": "Conspiracy",
       "parent": null,
       "kind": "topic",
-      "blurb": "SPECULATION nest \u2014 clearly labeled. Not facts.",
+      "blurb": "SPECULATION nest — clearly labeled. Not facts.",
       "rankings": [],
       "reviews": [
         {
           "id": "r-consp-1",
           "subject": "Speculation vs FOIA",
           "stars": 3,
-          "snippet": "SPECULATION \u2014 not established fact.",
+          "snippet": "SPECULATION — not established fact.",
           "region": "US"
         },
         {
@@ -464,14 +457,14 @@
       ],
       "railPins": [],
       "speculation": true,
-      "disclaimer": "SPECULATION \u2014 not established fact. Cross-check FOIA / public archives."
+      "disclaimer": "SPECULATION — not established fact. Cross-check FOIA / public archives."
     },
     {
       "slug": "history",
       "label": "History",
       "parent": null,
       "kind": "topic",
-      "blurb": "Cold War to present \u2014 public timelines.",
+      "blurb": "Cold War to present — public timelines.",
       "rankings": [],
       "reviews": [
         {
@@ -496,7 +489,7 @@
       "label": "Tech",
       "parent": null,
       "kind": "topic",
-      "blurb": "OSINT tools & public tech \u2014 no exploit talk.",
+      "blurb": "OSINT tools & public tech — no exploit talk.",
       "rankings": [],
       "reviews": [
         {
