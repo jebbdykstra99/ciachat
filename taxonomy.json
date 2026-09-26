@@ -4,6 +4,15 @@
   "taxonomyName": "Public record",
   "topics": [
     {
+      "id": "sources",
+      "label": "Sources",
+      "kind": "theme",
+      "blurb": "Public process + released docs",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
       "id": "foia",
       "label": "FOIA",
       "kind": "theme",
@@ -40,10 +49,19 @@
       "status": "active"
     },
     {
-      "id": "tech",
-      "label": "Public tech explainers",
-      "kind": "theme",
-      "blurb": "High-level only",
+      "id": "cia-history",
+      "label": "CIA history",
+      "kind": "org",
+      "blurb": "Released docs about the Agency",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "allied-services",
+      "label": "Allied & foreign services",
+      "kind": "org",
+      "blurb": "Secondary cites only",
       "followDefault": false,
       "adminSeed": true,
       "status": "active"
@@ -74,15 +92,26 @@
       "followDefault": true,
       "adminSeed": true,
       "status": "active"
+    },
+    {
+      "id": "tech",
+      "label": "Public tech explainers",
+      "kind": "theme",
+      "blurb": "High-level only",
+      "followDefault": false,
+      "adminSeed": true,
+      "status": "active"
     }
   ],
-  "topicCount": 8,
+  "topicCount": 11,
   "defaultWatchlist": [
+    "sources",
     "foia",
     "reading-room",
     "history",
+    "cia-history",
     "speculation",
     "not-agency"
   ],
-  "notes": "adminSeed topics are factory pre-populated. Users may unfollow (remove from their list) or follow more from the full taxonomy. Admins may retire topics (status=retired) or add new ones; user lists stay editable."
+  "notes": "Starter-10 green-light (Jebb 2026-09-26; prior SubX CMO CLEAR 2026-09-25). Soft locks: no per-agency left-nav; cold-war not default Topic; Vault iced. adminSeed topics are factory pre-populated. Users may unfollow or follow more; cold-war is not a default Topic. Tech explainers stay followDefault false and are not a left-nav nest."
 }
