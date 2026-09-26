@@ -1,0 +1,88 @@
+{
+  "siteId": "cia",
+  "domain": "ciachat.com",
+  "taxonomyName": "Public record",
+  "topics": [
+    {
+      "id": "foia",
+      "label": "FOIA",
+      "kind": "theme",
+      "blurb": "How to file (public)",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "reading-room",
+      "label": "Reading Room",
+      "kind": "org",
+      "blurb": "Released docs",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "history",
+      "label": "History",
+      "kind": "theme",
+      "blurb": "Cited timelines",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "cold-war",
+      "label": "Cold War",
+      "kind": "theme",
+      "blurb": "Historical era",
+      "followDefault": false,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "tech",
+      "label": "Public tech explainers",
+      "kind": "theme",
+      "blurb": "High-level only",
+      "followDefault": false,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "museums",
+      "label": "Museums",
+      "kind": "place",
+      "blurb": "Public exhibits",
+      "followDefault": false,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "speculation",
+      "label": "SPECULATION desk",
+      "kind": "theme",
+      "blurb": "Label required",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    },
+    {
+      "id": "not-agency",
+      "label": "Not the Agency",
+      "kind": "theme",
+      "blurb": "Unofficial room lock",
+      "followDefault": true,
+      "adminSeed": true,
+      "status": "active"
+    }
+  ],
+  "topicCount": 8,
+  "defaultWatchlist": [
+    "foia",
+    "reading-room",
+    "history",
+    "speculation",
+    "not-agency"
+  ],
+  "notes": "adminSeed topics are factory pre-populated. Users may unfollow (remove from their list) or follow more from the full taxonomy. Admins may retire topics (status=retired) or add new ones; user lists stay editable."
+}
