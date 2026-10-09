@@ -1,6 +1,5 @@
 {
   "siteId": "cia",
-  "redditSr": "ciachat",
   "name": "ciachat",
   "domain": "ciachat.com",
   "tagline": "FOIA, not fanfic.",
@@ -643,5 +642,16 @@
     "notes": "Starter-10 green-light (Jebb 2026-09-26; prior SubX CMO CLEAR 2026-09-25). Soft locks: no per-agency left-nav; cold-war not default Topic; Vault iced. Factory followable topics — users keep/unfollow/add on their watchlist."
   },
   "v": 8,
-  "cacheBust": 8
+  "cacheBust": 8,
+  "trustBlurb": "Public sources and FOIA. Speculation labeled. Not official CIA.",
+  "redditCrosspost": false,
+  "skin": {
+    "avatarInitials": "CI",
+    "bioDefault": "Public sources. Speculation labeled.",
+    "exploreEmpty": "Nothing in this reading room matched that.",
+    "profileEmpty": "No posts yet. Cite a public source — or label speculation.",
+    "guestHandle": "guestcia",
+    "taglineH1": "true",
+    "regNamePlaceholder": "A ciachat handle"
+  }
 }
