@@ -657,5 +657,6 @@
     "guestHandle": "guestcia",
     "taglineH1": "true",
     "regNamePlaceholder": "A ciachat handle"
-  }
+  },
+  "minAge": 18
 }
