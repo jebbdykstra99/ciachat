@@ -113,5 +113,5 @@
     "speculation",
     "not-agency"
   ],
-  "notes": "Starter-10 green-light (Jebb 2026-09-26; prior SubX CMO CLEAR 2026-09-25). Soft locks: no per-agency left-nav; cold-war not default Topic; Vault iced. adminSeed topics are factory pre-populated. Users may unfollow or follow more; cold-war is not a default Topic. Tech explainers stay followDefault false and are not a left-nav nest."
+  "notes": "Starter-10 green-light (2026-09-26; prior SubX CMO CLEAR 2026-09-25). Soft locks: no per-agency left-nav; cold-war not default Topic; Vault iced. adminSeed topics are factory pre-populated. Users may unfollow or follow more; cold-war is not a default Topic. Tech explainers stay followDefault false and are not a left-nav nest."
 }
