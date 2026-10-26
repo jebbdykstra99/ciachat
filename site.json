@@ -3,12 +3,12 @@
   "name": "ciachat",
   "domain": "ciachat.com",
   "tagline": "FOIA, not fanfic.",
-  "composePlaceholder": "Cite a public source — or label speculation.",
+  "composePlaceholder": "Cite a public source, or label speculation.",
   "earlyWelcome": false,
   "dms": true,
   "preview": true,
   "robots": "noindex,nofollow",
-  "emptyState": "Preview room — noindex. Sign in to post. Guest can browse only. Public sources and FOIA. Speculation labeled. Not official CIA. Do not invent classified claims.",
+  "emptyState": "Preview room: noindex. Sign in to post. Guest can browse only. Public sources and FOIA. Speculation labeled. Not official CIA. Do not invent classified claims.",
   "theme": {
     "bg": "#101418",
     "surface": "#181e24",
@@ -37,7 +37,7 @@
     {
       "tag": "FOIA",
       "headline": "Start at archives.gov",
-      "snippet": "Public process outbound — not classified.",
+      "snippet": "Public process outbound, not classified.",
       "meta": "Nest: foia"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "tag": "Speculation",
-      "headline": "SPECULATION nest — labeled",
+      "headline": "SPECULATION nest: labeled",
       "snippet": "Not facts. Cross-check FOIA.",
       "meta": "Nest: speculation"
     },
@@ -61,7 +61,7 @@
     {
       "tag": "Sources",
       "headline": "Public sources first",
-      "snippet": "High-level explainers only — no exploits.",
+      "snippet": "High-level explainers only, no exploits.",
       "meta": "Nest: sources"
     },
     {
@@ -75,7 +75,7 @@
     {
       "tag": "FOIA",
       "title": "FOIA",
-      "snippet": "Process + public filings. Ask: portal first or Reading Room find — which are you bringing?",
+      "snippet": "Process + public filings. Ask: portal first or Reading Room find? Which are you bringing?",
       "empty": "No FOIA threads yet. Start with a public filing or process note."
     },
     {
@@ -87,7 +87,7 @@
     {
       "tag": "Speculation",
       "title": "Speculation",
-      "snippet": "SPECULATION only. Ask: FACT / STORYLINE / SPECULATION — label before you pile on.",
+      "snippet": "SPECULATION only. Ask: FACT / STORYLINE / SPECULATION. Label before you pile on.",
       "empty": "Speculation seat is empty. If you post here, lead with SPECULATION."
     },
     {
@@ -111,7 +111,7 @@
     {
       "tag": "Allied services",
       "title": "Allied & foreign services",
-      "snippet": "Peers in one room — secondary citations only. Ask: what public source are you standing on?",
+      "snippet": "Peers in one room: secondary citations only. Ask: what public source are you standing on?",
       "empty": "No allied-services threads yet. Name a secondary citation."
     }
   ],
@@ -142,7 +142,7 @@
     "maxSeconds": 15,
     "maxBytes": 8000000
   },
-  "seedNote": "sample — not mixed into the live feed",
+  "seedNote": "sample, not mixed into the live feed",
   "rail": {
     "kind": "room-brief",
     "title": "Room Brief",
@@ -151,7 +151,7 @@
     "footer": "Public sources and FOIA. Speculation labeled. Free boards: FOIA.gov · CIA Reading Room. Not official CIA. Vault iced (unlock-2).",
     "porch": {
       "prompt": "Public source or speculation?",
-      "copy": "Open the Official U.S. FOIA portal (https://www.foia.gov/) for process / agency contacts. For released/declassified docs only, use the Official CIA Electronic Reading Room (https://www.cia.gov/readingroom/) — outbound links; we never re-host files. Then come back: which nest (Sources / FOIA / History / Speculation / CIA history…), one citation or a clear SPECULATION label, and one question for the room.",
+      "copy": "Open the Official U.S. FOIA portal (https://www.foia.gov/) for process / agency contacts. For released/declassified docs only, use the Official CIA Electronic Reading Room (https://www.cia.gov/readingroom/). Outbound links; we never re-host files. Then come back: which nest (Sources / FOIA / History / Speculation / CIA history…), one citation or a clear SPECULATION label, and one question for the room.",
       "dwellMs": 9000,
       "options": [
         "Sources",
@@ -184,7 +184,7 @@
       "label": "Sources",
       "parent": null,
       "kind": "theme",
-      "blurb": "Hub for public process + released docs — cite before pile-on.",
+      "blurb": "Hub for public process + released docs: cite before pile-on.",
       "nav": true
     },
     {
@@ -192,7 +192,7 @@
       "label": "FOIA",
       "parent": "sources",
       "kind": "theme",
-      "blurb": "How the public process works — FOIA.gov first, filings & timeouts.",
+      "blurb": "How the public process works: FOIA.gov first, filings & timeouts.",
       "nav": true
     },
     {
@@ -200,7 +200,7 @@
       "label": "Reading Room",
       "parent": "sources",
       "kind": "org",
-      "blurb": "Released/declassified finds with outbound links — never re-host.",
+      "blurb": "Released/declassified finds with outbound links; never re-host.",
       "nav": true
     },
     {
@@ -208,7 +208,7 @@
       "label": "History",
       "parent": null,
       "kind": "theme",
-      "blurb": "Cited timelines & secondary sources — cite or say unknown.",
+      "blurb": "Cited timelines & secondary sources: cite or say unknown.",
       "nav": true
     },
     {
@@ -224,7 +224,7 @@
       "label": "CIA history",
       "parent": "history",
       "kind": "org",
-      "blurb": "History + released docs about the Agency — never Agency voice.",
+      "blurb": "History + released docs about the Agency, never Agency voice.",
       "nav": true
     },
     {
@@ -232,7 +232,7 @@
       "label": "Allied & foreign services",
       "parent": null,
       "kind": "org",
-      "blurb": "MI6 / Mossad / peers — secondary cites only; one room, not four.",
+      "blurb": "MI6 / Mossad / peers: secondary cites only; one room, not four.",
       "nav": true
     },
     {
@@ -240,7 +240,7 @@
       "label": "Museums",
       "parent": null,
       "kind": "place",
-      "blurb": "NCM / Spy Museum visitor notes — placards are not classified scoops.",
+      "blurb": "NCM / Spy Museum visitor notes: placards are not classified scoops.",
       "nav": true
     },
     {
@@ -248,7 +248,7 @@
       "label": "Speculation",
       "parent": null,
       "kind": "theme",
-      "blurb": "SPECULATION label required in line one — or move to FOIA/History.",
+      "blurb": "SPECULATION label required in line one, or move to FOIA/History.",
       "nav": true
     },
     {
@@ -256,7 +256,7 @@
       "label": "Not the Agency",
       "parent": null,
       "kind": "theme",
-      "blurb": "Room lock / trust — unofficial, no cosplay, no doxxing.",
+      "blurb": "Room lock / trust: unofficial, no cosplay, no doxxing.",
       "nav": true
     }
   ],
@@ -389,7 +389,7 @@
     "avatarInitials": "CI",
     "bioDefault": "Public sources. Speculation labeled.",
     "exploreEmpty": "Nothing in this reading room matched that.",
-    "profileEmpty": "No posts yet. Cite a public source — or label speculation.",
+    "profileEmpty": "No posts yet. Cite a public source, or label speculation.",
     "guestHandle": "guestcia",
     "taglineH1": "true",
     "regNamePlaceholder": "A ciachat handle"
