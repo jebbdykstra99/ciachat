@@ -394,5 +394,6 @@
     "taglineH1": "true",
     "regNamePlaceholder": "A ciachat handle"
   },
-  "minAge": 18
+  "minAge": 18,
+  "accountsOpen": true
 }
