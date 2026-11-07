@@ -5,7 +5,7 @@
   "siteId": "cia",
   "files": {
     "factory.js": "e3a8df039c327664679121a12213a0d5018a3fc64fac4722e275e2ea72c1e4ae",
-    "styles.css": "04895f8b99ee33de013fdf47644650787ac3819c616e8217af43d3e8b539bad3"
+    "styles.css": "074a80f5a3dac2a926a97b972a4624f3f0ac6a8af4be71a0193c73c684315ac6"
   },
   "keepFiles": [
     "takedown.js"
