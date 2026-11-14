@@ -1546,7 +1546,7 @@ body.legal-page {
 /* Featured articles (factory-featured.js, Nov 14 2026) */
 .post-featured-pill {
   font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--text);
+  text-transform: uppercase; color: #FFFFFF;
   background: var(--accent); border-radius: 999px;
   padding: 0.05rem 0.5rem; line-height: 1.5;
 }
