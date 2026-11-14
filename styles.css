@@ -1,20 +1,20 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:          #101418;
-  --surface:          #181e24;
+  --bg:          #ffffff;
+  --surface:          #f7f9f9;
   --nav-bg:          #080c10;
   --nav-text:     #8a9aa8;
   --nav-hover:     #e0e8f0;
   --nav-active:     #e0e8f0;
-  --text:          #e0e8f0;
-  --text-muted:     #8a9aa8;
-  --text-light:     #5a6a78;
+  --text:          #0f1419;
+  --text-muted:     #536471;
+  --text-light:     #536471;
   --accent:          #3d7a4a;
   --accent-dark:     #2a5a34;
   --teal:          #4a7a8a;
-  --silver:          #a0b0c0;
-  --border:          #283038;
+  --silver:          #cfd9de;
+  --border:          #eff3f4;
   --nav-w:          275px;
   --right-w:          330px;
   --ui:          Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -533,7 +533,7 @@ body.right-collapsed .right-panel-tab svg { transform: scaleX(1); }
 .post-image {
   margin-top: 0.7rem;
   border-radius: 10px; overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1px solid var(--silver);
 }
 .post-image img {
   width: 100%; max-height: 420px; object-fit: contain;

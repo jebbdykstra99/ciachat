@@ -7,7 +7,7 @@
     "factory.js": "f18d07e4db5aaa2722f284aba542eb6b41a48699ae2bad0c54bbec5e558a29d0",
     "factory-featured.js": "6a7b0944ad5ddffee073b0818d711fe88dc3761d310d3c3efb67d82759bda306",
     "factory-signin.js": "51ce100803d5cc7270fbfa488841cb75594b8c0bf092ee41c28460c1d4105958",
-    "styles.css": "7bf965e158ed5adf78e73a242bb2f0ba7389acf1aeb0a4417e418f58a31d5a24"
+    "styles.css": "36cfaf60b673b100ed4d670cf5530a508d4bd3be9d19a5e057f181f86bad5378"
   },
   "keepFiles": [
     "takedown.js"
